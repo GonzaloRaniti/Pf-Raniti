@@ -236,14 +236,15 @@ body {
 
 /* CONTACTO */
 .prueba {
-  background-image: linear-gradient(to top, #a0e486 0%, #eaee10 100%);
+  background-image: linear-gradient(to top, #0bd7f1 0%, #e94f29 100%);
   display: flex;
   flex-direction: column;
   height: 80vh;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   width: 40%;
-  margin: 15px; }
+  margin: 15px;
+  border-radius: 40px; }
 
 .h1 {
   font-family: 'Courier New', Courier, monospace;
@@ -254,8 +255,8 @@ body {
   color: #0f0f0f;
   font-weight: bold; }
   .boton-form:hover {
-    color: brown;
-    border: 5px solid black; }
+    color: #3b06fc;
+    border: 2px solid black; }
 
 .footer {
   display: flex;
@@ -280,8 +281,8 @@ body {
 
 @media (max-width: 320px) {
   .parrafo-1 {
-    color: blueviolet;
-    font-weight: normal; } }
+    color: #414416;
+    font-weight: bold; } }
 
 @media (max-width: 480px) {
   .imagen img {

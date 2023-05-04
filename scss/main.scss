@@ -360,14 +360,15 @@ body {
 
 /* CONTACTO */
 .prueba {
-    background-image: linear-gradient(to top, #a0e486 0%, #eaee10 100%);
+    background-image: linear-gradient(to top, #0bd7f1 0%, #e94f29 100%);
     display: flex;
     flex-direction: column;
     height: 80vh;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     width: 40%;
     margin: 15px;
+    border-radius: 40px;
 
 }
 
@@ -384,8 +385,8 @@ body {
     font-weight: bold;
 
     &:hover {
-        color: brown;
-        border: 5px solid black;
+        color: rgb(59, 6, 252);
+        border: 2px solid black;
     }
 }
 
@@ -427,8 +428,8 @@ body {
 
 @media (max-width:320px) {
     .parrafo-1 {
-        color: blueviolet;
-        font-weight: normal;
+        color: #414416;
+        font-weight: bold;
     }
 }
 
