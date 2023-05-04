@@ -236,7 +236,7 @@ body {
 
 /* CONTACTO */
 .prueba {
-  background-image: linear-gradient(to top, #0bd7f1 0%, #e94f29 100%);
+  background-image: linear-gradient(to top, #0bd7f1 0%, #ff7402 100%);
   display: flex;
   flex-direction: column;
   height: 80vh;
