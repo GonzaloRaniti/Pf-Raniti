@@ -84,6 +84,16 @@ body {
     font-size: 15px;
     font-weight: bold; }
 
+.imagen {
+  animation-name: slide-in;
+  animation-duration: 1s; }
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(0); } }
+
 /* MIRAR ESTE ITEM */
 .parrafo-1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -136,19 +146,17 @@ body {
   text-align: center;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace; }
-
-.titulo-2:hover {
-  background-color: yellow;
-  color: blue; }
+  .titulo-2:hover {
+    background-color: yellow;
+    color: blue; }
 
 .titulo-3 {
   text-align: center;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace; }
-
-.titulo-3:hover {
-  background-color: red;
-  color: white; }
+  .titulo-3:hover {
+    background-color: red;
+    color: white; }
 
 .flex-river {
   display: flex;
@@ -235,16 +243,24 @@ body {
     color: white; }
 
 /* CONTACTO */
+.p-contacto {
+  margin: 15px;
+  font-size: 1.8rem;
+  color: #141414;
+  border: 5px solid #f86604; }
+
 .prueba {
-  background-image: linear-gradient(to top, #0bd7f1 0%, #ff7402 100%);
+  background-image: linear-gradient(to top, #0fe90f 0%, #ff7402 100%);
   display: flex;
   flex-direction: column;
   height: 80vh;
   justify-content: space-around;
   align-items: center;
-  width: 40%;
   margin: 15px;
   border-radius: 40px; }
+  .prueba input {
+    text-align: center;
+    border: 3px black solid; }
 
 .h1 {
   font-family: 'Courier New', Courier, monospace;
@@ -254,8 +270,9 @@ body {
 .boton-form {
   color: #0f0f0f;
   font-weight: bold; }
-  .boton-form:hover {
-    color: #3b06fc;
+  .boton-form:focus {
+    color: #fc2b06;
+    background-color: #fc7c05;
     border: 2px solid black; }
 
 .footer {
