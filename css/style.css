@@ -262,6 +262,11 @@ body {
     text-align: center;
     border: 3px black solid; }
 
+.prueba-2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%; }
+
 .h1 {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
