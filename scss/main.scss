@@ -1,5 +1,9 @@
+@import "./utilities/variables";
+@import "./views/contacto";
+
 // VARIABLES
 $naranja: rgb(253, 125, 5);
+
 
 * {
     margin: 0;
@@ -103,17 +107,6 @@ body {
     text-align: center;
     font-weight: bold;
     color: #070707;
-}
-
-
-.h2 {
-    font-weight: bold;
-    text-align: center;
-    margin: 10px;
-
-    &:hover {
-        color: #0cb2f3;
-    }
 }
 
 

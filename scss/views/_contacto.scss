@@ -1,0 +1,10 @@
+.h2 {
+    color: #111111;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+
+    &:hover {
+        color: #0cb2f3;
+    }
+}
