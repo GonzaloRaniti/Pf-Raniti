@@ -73,12 +73,9 @@ body {
     color: #0cb2f3; }
 
 .imagen {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  margin: 100px 35px; }
+  margin: 100px 35px;
+  animation-name: slide-in;
+  animation-duration: 1s; }
   .imagen img {
     max-width: 500px;
     margin: 20px; }
@@ -91,8 +88,10 @@ body {
     border: 2px #ee6307 double; }
 
 .imagen {
-  animation-name: slide-in;
-  animation-duration: 1s; }
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center; }
 
 @keyframes slide-in {
   from {

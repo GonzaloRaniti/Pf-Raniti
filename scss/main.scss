@@ -121,12 +121,9 @@ body {
 // Primera parte de la foto y el texto
 
 .imagen {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
     margin: 100px 35px;
+    animation-name: slide-in;
+    animation-duration: 1s;
 
 
     img {
@@ -145,9 +142,17 @@ body {
 
 }
 
-.imagen {
-    animation-name: slide-in;
-    animation-duration: 1s;
+// MIXIN
+
+@mixin flex ($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.imagen{
+    @include flex(row-reverse,center ,center)
 }
 
 @keyframes slide-in {
