@@ -59,10 +59,11 @@ body {
 
 .titulo-1 {
   padding-top: 15px;
+  font-family: serif;
   text-decoration: underline;
   text-align: center;
   font-weight: bold;
-  color: blueviolet; }
+  color: #070707; }
 
 .h2 {
   font-weight: bold;
@@ -79,10 +80,15 @@ body {
   align-items: center;
   margin: 100px 35px; }
   .imagen img {
-    max-width: 500px; }
+    max-width: 500px;
+    margin: 20px; }
   .imagen p {
+    margin-left: 10px;
+    padding: 10px;
+    color: #2c2c2e;
     font-size: 15px;
-    font-weight: bold; }
+    font-weight: bold;
+    border: 2px #ee6307 double; }
 
 .imagen {
   animation-name: slide-in;
@@ -101,7 +107,7 @@ body {
   margin: 15px; }
   .parrafo-1 p {
     font-size: 1rem;
-    border: #f88e02 5px ridge;
+    border: #f88e02 5px dashed;
     padding: 10px;
     margin-left: 40px;
     margin-right: 40px;
@@ -142,21 +148,17 @@ body {
 .titulo {
   margin: 20px; }
 
-.titulo-2 {
+.titulo-2, .titulo-3, .titulo-4, .titulo-5 {
   text-align: center;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace; }
-  .titulo-2:hover {
+  .titulo-2:hover, .titulo-3:hover, .titulo-4:hover, .titulo-5:hover {
     background-color: yellow;
     color: blue; }
 
-.titulo-3 {
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace; }
-  .titulo-3:hover {
-    background-color: red;
-    color: white; }
+.titulo-3:hover {
+  background-color: red;
+  color: white; }
 
 .flex-river {
   display: flex;
@@ -197,13 +199,9 @@ body {
   font-weight: bold;
   border: solid 10px #f06f06; }
 
-.titulo-4 {
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace; }
-  .titulo-4:hover {
-    background-color: aqua;
-    color: white; }
+.titulo-4:hover {
+  background-color: aqua;
+  color: white; }
 
 .parrafo-racing {
   display: flex;
@@ -234,13 +232,9 @@ body {
     background-color: #ff0d0d;
     color: white; }
 
-.titulo-5 {
-  text-align: center;
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace; }
-  .titulo-5:hover {
-    background-color: #fd071b;
-    color: white; }
+.titulo-5:hover {
+  background-color: #fd071b;
+  color: white; }
 
 /* CONTACTO */
 .p-contacto {
@@ -296,10 +290,10 @@ body {
     margin: 0 10px; }
   .ul-footer a {
     text-decoration: none;
-    color: black;
+    color: #f5eeee;
     font-weight: bold; }
     .ul-footer a:hover {
-      color: white; }
+      color: #080808; }
 
 @media (max-width: 320px) {
   .parrafo-1 {
@@ -318,3 +312,12 @@ body {
   .imagen {
     align-items: center;
     flex-direction: column; } }
+
+.ul-footer--instagram {
+  background-color: orange; }
+
+.ul-footer--ole {
+  background-color: green; }
+
+.ul-footer--tyc-sports {
+  background-color: blue; }

@@ -98,10 +98,11 @@ body {
 
 .titulo-1 {
     padding-top: 15px;
+    font-family: serif;
     text-decoration: underline;
     text-align: center;
     font-weight: bold;
-    color: blueviolet;
+    color: #070707;
 }
 
 
@@ -126,15 +127,20 @@ body {
     justify-content: center;
     align-items: center;
     margin: 100px 35px;
-    
+
 
     img {
         max-width: 500px;
+        margin: 20px;
     }
 
     p {
+        margin-left: 10px;
+        padding: 10px;
+        color: #2c2c2e;
         font-size: 15px;
         font-weight: bold;
+        border: 2px #ee6307 double;
     }
 
 }
@@ -163,7 +169,7 @@ body {
 
     p {
         font-size: 1rem;
-        border: rgb(248, 142, 2) 5px ridge;
+        border: rgb(248, 142, 2) 5px dashed;
         padding: 10px;
         margin-left: 40px;
         margin-right: 40px;
@@ -239,9 +245,7 @@ body {
 
 
 .titulo-3 {
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    @extend .titulo-2;
 
     &:hover {
         background-color: red;
@@ -304,9 +308,7 @@ body {
 }
 
 .titulo-4 {
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    @extend .titulo-2;
 
     &:hover {
         background-color: aqua;
@@ -358,9 +360,7 @@ body {
 
 
 .titulo-5 {
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    @extend .titulo-2;
 
     &:hover {
         background-color: rgb(253, 7, 27);
@@ -395,7 +395,7 @@ body {
     }
 }
 
-.prueba-2{
+.prueba-2 {
     display: flex;
     justify-content: space-evenly;
     width: 50%;
@@ -446,16 +446,16 @@ body {
 
     a {
         text-decoration: none;
-        color: black;
+        color: #f5eeee;
         font-weight: bold;
 
         &:hover {
-            color: white;
+            color: #080808;
         }
     }
 }
 
-
+// MEDIAS QUERIES
 
 @media (max-width:320px) {
     .parrafo-1 {
@@ -487,3 +487,17 @@ body {
 
     }
 }
+
+// MAPS
+$redes: (
+    instagram: orange,
+    ole: green,
+    tyc-sports: blue
+);
+
+@each $red, $color in $redes {
+    .ul-footer--#{$red} {
+        background-color: $color;
+    }
+}
+
