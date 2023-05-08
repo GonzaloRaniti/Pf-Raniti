@@ -1,4 +1,3 @@
-
 @import "./views/contacto";
 
 // VARIABLES
@@ -137,15 +136,15 @@ body {
 
 // MIXIN
 
-@mixin flex ($direction, $justify, $align){
+@mixin flex ($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
 }
 
-.imagen{
-    @include flex(row-reverse,center ,center)
+.imagen {
+    @include flex(row-reverse, center, center)
 }
 
 @keyframes slide-in {
@@ -493,9 +492,9 @@ $redes: (
     tyc-sports: blue
 );
 
-@each $red, $color in $redes {
+@each $red,
+$color in $redes {
     .ul-footer--#{$red} {
         background-color: $color;
     }
 }
-
