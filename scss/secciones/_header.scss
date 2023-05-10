@@ -1,0 +1,15 @@
+.nav {
+    background-color: $naranja !important;
+
+    a {
+        &:hover {
+            color: black !important;
+        }
+    }
+
+}
+
+.nav-item a {
+    font-weight: bold;
+    color: white;
+}

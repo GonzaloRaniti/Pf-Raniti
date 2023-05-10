@@ -1,0 +1,33 @@
+/* RACING CLUB */
+.escudo-racing {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    font-weight: bold;
+    padding-top: 15px;
+    color: aqua;
+    width: 80%;
+    margin: auto;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: 2s;
+    }
+}
+// titulo internacional racing
+.titulo-4 {
+    @extend .titulo-2;
+
+    &:hover {
+        background-color: aqua;
+        color: white;
+    }
+
+}
+.parrafo-racing {
+    display: flex;
+    font-size: 15px;
+    margin: 10px;
+}

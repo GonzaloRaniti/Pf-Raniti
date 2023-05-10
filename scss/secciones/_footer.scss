@@ -1,0 +1,41 @@
+.footer {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-around;
+    height: 14vh;
+    background-color: $naranja;
+}
+.ul-footer {
+    display: flex;
+    list-style: none;
+
+    li {
+        margin: 0 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #f5eeee;
+        font-weight: bold;
+
+        &:hover {
+            color: #080808;
+        }
+    }
+}
+// MAPS
+$redes: (
+    instagram: #5bf005,
+    ole: green,
+    tyc-sports: blue
+);
+
+@each $red,
+$color in $redes {
+    .ul-footer--#{$red} {
+        background-color: $color;
+    }
+}

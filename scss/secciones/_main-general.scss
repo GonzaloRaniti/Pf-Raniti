@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(236, 241, 252);
+}
+// INICIO
+
+#main-inicio {
+    background-color: #e7c2c2;
+}
+
+.titulo-1 {
+    padding-top: 15px;
+    font-family: serif;
+    text-decoration: underline;
+    text-align: center;
+    font-weight: bold;
+    color: #070707;
+}
+.titulo {
+    margin: 20px;
+
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 20px;
+}
+// foto del inicio de la pagina
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    max-width: 80%;
+
+}
+.parrafo-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 15px;
+
+    p {
+        font-size: 1rem;
+        border: rgb(248, 142, 2) 5px dashed;
+        padding: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 45px;
+    }
+}
+// tabla general de maximos goleadores -- maximas presencias.
+.table {
+    margin: 50px auto;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: solid 10px #f06f06;
+}

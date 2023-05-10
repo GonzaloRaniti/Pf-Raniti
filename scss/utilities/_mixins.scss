@@ -10,3 +10,26 @@
 .imagen{
     @include flex(row-reverse,center ,center)
 }
+
+// MIXIN
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.imagen {
+    @include flex(row-reverse, center, center)
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
