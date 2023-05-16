@@ -84,10 +84,10 @@ body {
   background-color: #5bf005; }
 
 .ul-footer--ole {
-  background-color: green; }
+  background-color: #008000; }
 
 .ul-footer--tyc-sports {
-  background-color: blue; }
+  background-color: #17fcfc; }
 
 /* BOCA JUNIORS */
 /* acomodar mi titulo.*/
@@ -133,6 +133,10 @@ body {
   .titulo-2:hover, .titulo-3:hover, .titulo-4:hover, .titulo-5:hover {
     background-color: yellow;
     color: blue; }
+
+.parrafo-2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-inline: 40px; }
 
 .escudo-river {
   display: flex;
