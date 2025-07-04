@@ -1,132 +1,294 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="quienes-somos, slp, contenido-exclusivo, instagram, en-vivo">
-    <meta name="description"
-        conten="Somos una página deportiva donde vamos a hablar de la historia de los grandes clubes del fútbol argentino">
-    <title>INICIO | SLP</title>
+    <meta name="keywords" content="fútbol argentino, boca juniors, river plate, racing club, independiente, historia, copas, títulos">
+    <meta name="description" content="Somos una página deportiva donde vas a encontrar la historia de los grandes clubes del fútbol argentino. Desde sus comienzos hasta sus mayores logros.">
+    <title>Sonríe La Pelota | Historia del Fútbol Argentino</title>
     <link rel="shortcut icon" href="./recursos/logo-final.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+    <!-- Fuentes web modernas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./recursos/favicon.png" alt="slp" width="50px">
+    <!-- Header moderno -->
+    <header class="header-modern">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="./recursos/favicon.png" alt="SLP Logo" class="brand-logo">
+                    <span class="brand-text">Sonríe La Pelota</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="./index.html">INICIO</a>
+                            <a class="nav-link active" href="./index.html">
+                                <i class="fas fa-home"></i> Inicio
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page"
-                                href="./pages/boca-juniors.html">BOCA
-                                JUNIORS</a>
+                            <a class="nav-link" href="./pages/boca-juniors.html">
+                                <i class="fas fa-shield-alt"></i> Boca Juniors
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page"
-                                href="./pages/river-plate.html">RIVER
-                                PLATE</a>
+                            <a class="nav-link" href="./pages/river-plate.html">
+                                <i class="fas fa-shield-alt"></i> River Plate
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page"
-                                href="./pages/racing-club.html">RACING
-                                CLUB</a>
+                            <a class="nav-link" href="./pages/racing-club.html">
+                                <i class="fas fa-shield-alt"></i> Racing Club
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page"
-                                href="./pages/independiente.html">INDEPENDIENTE</a>
+                            <a class="nav-link" href="./pages/independiente.html">
+                                <i class="fas fa-shield-alt"></i> Independiente
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page"
-                                href="./pages/contacto.html">CONTACTANOS</a>
+                            <a class="nav-link" href="./pages/contacto.html">
+                                <i class="fas fa-envelope"></i> Contacto
+                            </a>
                         </li>
-
                     </ul>
-
                 </div>
             </div>
         </nav>
-
     </header>
 
-    <main id="main-inicio">
-
-        <div class="mq-index">
-            <h1 class="titulo-1">SONRIE LA PELOTA</h1>
-
-
-            <div class="container foto">
-                <div class="row">
-                    <img class="col-sm-12 col-lg-6" src="./recursos/somos-rivales-no-enemigos.jpg"
-                        alt="hinchadas unidas" width="400px">
-                    <img class="col-sm-12 col-lg-6" src="./recursos/futbol-1-kU3C--1200x630@abc.jpg" alt="Futbol"
-                        width="474px">
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <h1 class="hero-title">
+                            <span class="text-gradient">Sonríe</span> La Pelota
+                        </h1>
+                        <p class="hero-subtitle">
+                            Descubre la rica historia de los grandes clubes del fútbol argentino. 
+                            Desde sus humildes comienzos hasta convertirse en gigantes del deporte.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#clubes" class="btn btn-primary btn-lg">
+                                <i class="fas fa-futbol"></i> Explorar Clubes
+                            </a>
+                            <a href="#nosotros" class="btn btn-outline-primary btn-lg">
+                                <i class="fas fa-info-circle"></i> Conocenos
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="hero-images">
+                            <div class="image-grid">
+                                <img src="./recursos/somos-rivales-no-enemigos.jpg" alt="Hinchadas unidas" class="hero-img hero-img-1">
+                                <img src="./recursos/futbol-1-kU3C--1200x630@abc.jpg" alt="Fútbol argentino" class="hero-img hero-img-2">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <section class="parrafo-1">
-            <p>En esta página vas a poder visualizar la historia de cuatro de los grandes equipos de nuestro fútbol.
-                Desde sus comienzos, que ganaron, cuantos títulos tienen en su haber y mucho más. Además, para ir
-                adelantandoles vamos a comenzar haciendo vivos, los sabados a partir de las 15:00hs por nuestra página
-                de Instagram</p>
         </section>
 
-        <h2 class="h2">¿QUIENES SOMOS?</h2>
-        <section class="titulo">
-            <p>
-                Como amantes del deporte, somos una comunidad unida por nuestra pasión por el mundo del deporte. En esta
-                página deportiva, nos dedicamos a informar, educar y entretener a nuestros seguidores con noticias,
-                análisis y opiniones sobre los deportes más populares en todo el mundo.
-
-                Somos un equipo de profesionales altamente calificados, incluyendo periodistas, expertos en deportes,
-                analistas y escritores, que trabajan incansablemente para ofrecer contenido de calidad a nuestra
-                audiencia. Nos enorgullece ser una fuente confiable y objetiva de información deportiva, brindando a
-                nuestros seguidores un análisis imparcial y una cobertura completa de los eventos deportivos más
-                destacados.
-
-                Además, valoramos la participación de nuestra comunidad y alentamos a nuestros seguidores a compartir
-                sus pensamientos y opiniones a través de nuestras plataformas de redes sociales. Creemos que el deporte
-                tiene el poder de unir a las personas y crear una comunidad diversa y apasionada, y nos esforzamos por
-                fomentar este espíritu en nuestra página deportiva.
-
-                En resumen, somos una página deportiva comprometida con la excelencia periodística y la objetividad en
-                nuestra cobertura deportiva. Valoramos a nuestra comunidad de seguidores y trabajamos duro para
-                mantenerlos informados y entretenidos. Nos enorgullecemos de ser una fuente confiable de información
-                deportiva y esperamos seguir sirviendo a nuestra comunidad en los años venideros.</p>
+        <!-- Clubes Section -->
+        <section id="clubes" class="clubes-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Los Grandes del Fútbol Argentino</h2>
+                    <p class="section-subtitle">Cuatro clubes que han marcado la historia del deporte en nuestro país</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="club-card">
+                            <div class="club-card-header">
+                                <img src="./recursos/boca-juniors-logo-escudo-7.png" alt="Boca Juniors" class="club-logo grandes-escudo">
+                                <h3>Boca Juniors</h3>
+                            </div>
+                            <p>El más grande de la Argentina, con 18 títulos internacionales y una pasión que trasciende fronteras.</p>
+                            <a href="./pages/boca-juniors.html" class="btn btn-outline-primary">
+                                <i class="fas fa-arrow-right"></i> Ver Historia
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="club-card">
+                            <div class="club-card-header">
+                                <img src="./recursos/escudo-river.png" alt="River Plate" class="club-logo grandes-escudo">
+                                <h3>River Plate</h3>
+                            </div>
+                            <p>El Millonario, con su estilo elegante y su Monumental, es sinónimo de grandeza en el fútbol argentino.</p>
+                            <a href="./pages/river-plate.html" class="btn btn-outline-primary">
+                                <i class="fas fa-arrow-right"></i> Ver Historia
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="club-card">
+                            <div class="club-card-header">
+                                <img src="./recursos/Escudo_de_Racing_Club_(2014).svg.png" alt="Racing Club" class="club-logo grandes-escudo">
+                                <h3>Racing Club</h3>
+                            </div>
+                            <p>La Academia, pionero en el fútbol argentino y primer campeón de la era profesional.</p>
+                            <a href="./pages/racing-club.html" class="btn btn-outline-primary">
+                                <i class="fas fa-arrow-right"></i> Ver Historia
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="club-card">
+                            <div class="club-card-header">
+                                <img src="./recursos/escudo-independiente.png" alt="Independiente" class="club-logo grandes-escudo">
+                                <h3>Independiente</h3>
+                            </div>
+                            <p>El Rey de Copas, con 7 Libertadores que lo convierten en el máximo ganador de la competición.</p>
+                            <a href="./pages/independiente.html" class="btn btn-outline-primary">
+                                <i class="fas fa-arrow-right"></i> Ver Historia
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
+        <!-- Nosotros Section -->
+        <section id="nosotros" class="nosotros-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="nosotros-content">
+                            <h2 class="section-title">¿Quiénes Somos?</h2>
+                            <p class="lead">
+                                Como amantes del deporte, somos una comunidad unida por nuestra pasión por el fútbol argentino.
+                            </p>
+                            <p>
+                                En esta página deportiva, nos dedicamos a informar, educar y entretener a nuestros seguidores 
+                                con noticias, análisis y la rica historia de los clubes más importantes de nuestro país.
+                            </p>
+                            <p>
+                                Somos un equipo de profesionales altamente calificados, incluyendo periodistas, expertos en deportes, 
+                                analistas y escritores, que trabajan incansablemente para ofrecer contenido de calidad a nuestra audiencia.
+                            </p>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <i class="fas fa-newspaper"></i>
+                                    <span>Contenido Exclusivo</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Comunidad Activa</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Historia Completa</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-live-stream"></i>
+                                    <span>Transmisiones en Vivo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="nosotros-image">
+                            <img src="./recursos/fundacion.jpg" alt="Fundación del fútbol argentino" class="img-fluid rounded-3 shadow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container text-center">
+                <div class="cta-content" data-aos="zoom-in">
+                    <h2>¡Seguí Nuestras Transmisiones!</h2>
+                    <p>Los sábados a partir de las 15:00hs por nuestra página de Instagram</p>
+                    <a href="https://www.instagram.com/sonrielapelota1/" target="_blank" class="btn btn-primary btn-lg">
+                        <i class="fab fa-instagram"></i> Seguinos en Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
-
-
-    <footer class="footer">
-        <ul class="ul-footer">
-            <li><a class="ul-footer--instagram" href="https://www.instagram.com/sonrielapelota1/"
-                    target="_blank">INSTAGRAM</a></li>
-            <li><a class="ul-footer--ole" href="https://www.ole.com.ar/" target="_blank">OLE</a></li>
-            <li><a class="ul-footer--tyc-sports" href="https://www.tycsports.com/" target="_blank">TYC SPORTS</a></li>
-
-        </ul>
+    <!-- Footer moderno -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="./recursos/logo-final.png" alt="SLP Logo" class="footer-logo">
+                        <h4>Sonríe La Pelota</h4>
+                        <p>Tu fuente de información sobre el fútbol argentino</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Enlaces Útiles</h5>
+                    <ul class="footer-links">
+                        <li><a href="https://www.ole.com.ar/" target="_blank">Olé</a></li>
+                        <li><a href="https://www.tycsports.com/" target="_blank">TyC Sports</a></li>
+                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Seguinos</h5>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/sonrielapelota1/" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.ole.com.ar/" target="_blank" class="social-link ole">
+                            <i class="fas fa-newspaper"></i>
+                        </a>
+                        <a href="https://www.tycsports.com/" target="_blank" class="social-link tyc">
+                            <i class="fas fa-tv"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sonríe La Pelota. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
 </body>
 
 </html>

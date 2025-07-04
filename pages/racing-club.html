@@ -1,184 +1,338 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="kaywords" content="racing-club historia, internacional, copas, idolos, máximos-goleadores">
-    <meta name="description"
-        conten="Racing club, más conocido como la academía y denominado como el primer grande, se fundó el 25 de marzo de 1903, siendo el primer blub argentino creado por criollos. Internacionalmente podemos decir que tienen una copa libertadores y una copa del mundo intercontinental. El máximo artillero es Alberto Marcovecchio, mientras que la máxima presencia le corresponde a Natalio Perinetti. Su clásico rival es Independiente.">
-    <title>Racing Club | SLP</title>
-    <link rel="shotcut icon" href="../recursos/logo-final.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta name="keywords" content="racing club, historia, internacional, copas, idolos, máximos-goleadores, academia, avellaneda, cilindro">
+    <meta name="description" content="Racing Club, conocido como La Academia, es el primer grande del fútbol argentino. Fundado en 1903, es pionero y multicampeón. Su máximo artillero es Alberto Marcovecchio y la máxima presencia es de Natalio Perinetti. Su clásico rival es Independiente.">
+    <title>Racing Club | Historia Completa | Sonríe La Pelota</title>
+    <link rel="shortcut icon" href="../recursos/logo-final.png">
+    <!-- Fuentes web modernas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../recursos/favicon.png" alt="slp" width="50px">
+    <!-- Header moderno -->
+    <header class="header-modern">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                    <img src="../recursos/favicon.png" alt="SLP Logo" class="brand-logo">
+                    <span class="brand-text">Sonríe La Pelota</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="./boca-juniors.html">BOCA
-                                JUNIORS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="./river-plate.html">RIVER
-                                PLATE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="./racing-club.html">RACING
-                                CLUB</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page"
-                                href="./independiente.html">INDEPENDIENTE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page"
-                                href="./contacto.html">CONTACTANOS</a>
-                        </li>
-
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./boca-juniors.html"><i class="fas fa-shield-alt"></i> Boca Juniors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./river-plate.html"><i class="fas fa-shield-alt"></i> River Plate</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="./racing-club.html"><i class="fas fa-shield-alt"></i> Racing Club</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./independiente.html"><i class="fas fa-shield-alt"></i> Independiente</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
                     </ul>
-
                 </div>
             </div>
         </nav>
-
     </header>
-
-    <main>
-        <section class="escudo-racing">
-            <h1>RACING CLUB</h1>
-
-            <img src="../recursos/Escudo_de_Racing_Club_(2014).svg.png" alt="Escudo racing-club" width="70px">
+    <main style="padding-top: 80px;">
+        <!-- Hero Section Racing -->
+        <section class="hero-section" style="background: linear-gradient(135deg, #00bcd4 0%, #2196f3 100%);">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="club-hero-content">
+                            <div class="club-hero-header-grandes-escudos">
+                                <img src="../recursos/Escudo_de_Racing_Club_(2014).svg.png" alt="Escudo Racing Club" class="club-hero-logo">
+                                <h1 class="hero-title">Racing Club</h1>
+                            </div>
+                            <p class="hero-subtitle">La Academia, pionero y multicampeón. Primer campeón del mundo argentino y referente de Avellaneda.</p>
+                            <div class="hero-stats">
+                                <div class="stat-item"><i class="fas fa-trophy"></i><span>1 Libertadores</span></div>
+                                <div class="stat-item"><i class="fas fa-star"></i><span>7 Ligas seguidas</span></div>
+                                <div class="stat-item"><i class="fas fa-globe"></i><span>1 Intercontinental</span></div>
+                                <div class="stat-item"><i class="fas fa-crown"></i><span>El primer grande</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="hero-image-container">
+                            <img src="../recursos/estadio-de-racing.jpg" alt="Estadio de Racing Club, El Cilindro" class="hero-main-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <div class="imagen">
-            <img src="../recursos/estadio-de-racing.jpg" alt="estadio de racing" width="500px">
-            <p> <strong> Racing Club, conocido popularmente como La Academia, es una entidad polideportiva con sede en
-                    Avellaneda, ciudad ubicada en el Gran Buenos Aires, Argentina. Fue fundado como club de fútbol el 25
-                    de
-                    marzo de 1903, con la particular de ser el primer club argentino creado íntegramente por
-                    criollos</strong>.5 Los colores que identifican a la institución son el celeste y el blanco,
-                utilizados
-                en honor a los colores patrios de la República Argentina. Racing Club ganó siete campeonatos de Primera
-                División consecutivos entre 1913 y 1919, consiguiendo múltiples récords como ser el primero de los Cinco
-                grandes del fútbol argentino en salir campeón, bicampeón y tricampeón; también es el primer y único
-                equipo
-                argentino en lograr el tetracampeonato, el pentacampeónato, el hexacampeónato y el heptacampeónato en la
-                historia argentina (récords aún en vigencia en el fútbol autóctono), además de ser el primer equipo
-                heptacampeón mundial y el único de todo el continente en alcanzar dicha hazaña hasta hoy.</p>
-
-        </div>
-
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Máximos goleadores</th>
-                    <th scope="col">Máximas presencias</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Alberto Marcovecchio (179)</td>
-                    <td>Natalio Perinetti (405)</td>
-
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Evaristo Barrera (136)</td>
-                    <td>Gustavo Costas (337)</td>
-
-                </tr>
-                <tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Juan José Pizzuti (118) </td>
-                    <td>Agustín Cejas (334)</td>
-
-                </tr>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Llamil Simes (106) </td>
-                    <td>Claudio Úbeda (329) </td>
-
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Natalio Perinetti (103) </td>
-                    <td>Juan C. Cárdenas (321)</td>
-
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="card mb-3">
-            <img src="../recursos/racing-campeon.jpg" class="card-img-top" alt="Racing Campeón" width="30px">
-            <div class="card-body">
-                <h5 class="card-title">Racing Campeón</h5>
-                <p class="card-text">En el verano de este año se consagró campeón tras ganarle a Boca por 2-1.</p>
-                <p class="card-text"><small class="text-body-secondary">El primer grande</small></p>
+        <!-- Historia Section -->
+        <section class="historia-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="section-header text-center" data-aos="fade-up">
+                            <h2 class="section-title">Historia y Fundación</h2>
+                            <p class="section-subtitle">El nacimiento de La Academia</p>
+                        </div>
+                        <div class="historia-content" data-aos="fade-up" data-aos-delay="200">
+                            <div class="historia-card">
+                                <div class="historia-date"><i class="fas fa-calendar-alt"></i><span>25 de Marzo de 1903</span></div>
+                                <p class="historia-text">Racing Club fue fundado como el primer club argentino creado íntegramente por criollos. Los colores celeste y blanco son en honor a la bandera argentina.</p>
+                                <p class="historia-text">Ganó siete campeonatos de Primera División consecutivos entre 1913 y 1919, logrando múltiples récords históricos.</p>
+                                <p class="historia-text">Es el primer y único equipo argentino en lograr el tetracampeonato, pentacampeonato, hexacampeonato y heptacampeonato en la historia argentina.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Estadísticas Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Récords y Estadísticas</h2>
+                    <p class="section-subtitle">Los números que hablan por sí solos</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stats-card">
+                            <h3 class="stats-card-title"><i class="fas fa-futbol"></i> Máximos Goleadores</h3>
+                            <div class="stats-table">
+                                <div class="stats-row"><span class="stats-position">1</span><span class="stats-name">Alberto Marcovecchio</span><span class="stats-value">179 goles</span></div>
+                                <div class="stats-row"><span class="stats-position">2</span><span class="stats-name">Evaristo Barrera</span><span class="stats-value">136 goles</span></div>
+                                <div class="stats-row"><span class="stats-position">3</span><span class="stats-name">Juan José Pizzuti</span><span class="stats-value">118 goles</span></div>
+                                <div class="stats-row"><span class="stats-position">4</span><span class="stats-name">Llamil Simes</span><span class="stats-value">106 goles</span></div>
+                                <div class="stats-row"><span class="stats-position">5</span><span class="stats-name">Natalio Perinetti</span><span class="stats-value">103 goles</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stats-card">
+                            <h3 class="stats-card-title"><i class="fas fa-users"></i> Máximas Presencias</h3>
+                            <div class="stats-table">
+                                <div class="stats-row"><span class="stats-position">1</span><span class="stats-name">Natalio Perinetti</span><span class="stats-value">405 partidos</span></div>
+                                <div class="stats-row"><span class="stats-position">2</span><span class="stats-name">Gustavo Costas</span><span class="stats-value">337 partidos</span></div>
+                                <div class="stats-row"><span class="stats-position">3</span><span class="stats-name">Agustín Cejas</span><span class="stats-value">334 partidos</span></div>
+                                <div class="stats-row"><span class="stats-position">4</span><span class="stats-name">Claudio Úbeda</span><span class="stats-value">329 partidos</span></div>
+                                <div class="stats-row"><span class="stats-position">5</span><span class="stats-name">Juan C. Cárdenas</span><span class="stats-value">321 partidos</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ídolos Section -->
+        <section class="idolos-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Ídolos del Club</h2>
+                    <p class="section-subtitle">Los jugadores que marcaron la historia académica</p>
+                </div>
+                <div class="idolos-card" data-aos="zoom-in">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="../recursos/racing-campeon.jpg" alt="Plantel campeón de Racing Club" class="idolos-image">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="idolos-content">
+                                <h3 class="idolos-title">Racing Campeón</h3>
+                                <p class="idolos-description">El primer grande y multicampeón argentino. Referentes históricos y planteles inolvidables.</p>
+                                <div class="idolos-list">
+                                    <div class="idolo-item"><i class="fas fa-star"></i><span>Roberto Perfumo - El Mariscal</span></div>
+                                    <div class="idolo-item"><i class="fas fa-star"></i><span>Juan José Pizzuti - El Maestro</span></div>
+                                    <div class="idolo-item"><i class="fas fa-star"></i><span>Norberto Raffo - El Goleador</span></div>
+                                    <div class="idolo-item"><i class="fas fa-star"></i><span>Agustín Cejas - El Arquero</span></div>
+                                    <div class="idolo-item"><i class="fas fa-star"></i><span>Alberto Marcovecchio - El Artillero</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Títulos por Década Section -->
+        <section class="titulos-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Títulos por Década</h2>
+                    <p class="section-subtitle">La evolución de la grandeza académica</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="decada-card">
+                            <div class="decada-header">
+                                <h4>1910s-1920s</h4>
+                                <span class="decada-numero">7 títulos</span>
+                            </div>
+                            <ul class="decada-list">
+                                <li>Primera División 1913</li>
+                                <li>Primera División 1914</li>
+                                <li>Primera División 1915</li>
+                                <li>Primera División 1916</li>
+                                <li>Primera División 1917</li>
+                                <li>Primera División 1918</li>
+                                <li>Primera División 1919</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="decada-card">
+                            <div class="decada-header">
+                                <h4>1950s-1960s</h4>
+                                <span class="decada-numero">3 títulos</span>
+                            </div>
+                            <ul class="decada-list">
+                                <li>Primera División 1950</li>
+                                <li>Primera División 1951</li>
+                                <li>Primera División 1958</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="decada-card">
+                            <div class="decada-header">
+                                <h4>1960s-1970s</h4>
+                                <span class="decada-numero">4 títulos</span>
+                            </div>
+                            <ul class="decada-list">
+                                <li>Primera División 1961</li>
+                                <li>Primera División 1966</li>
+                                <li>Libertadores 1967</li>
+                                <li>Intercontinental 1967</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="decada-card">
+                            <div class="decada-header">
+                                <h4>2000s-Presente</h4>
+                                <span class="decada-numero">3 títulos</span>
+                            </div>
+                            <ul class="decada-list">
+                                <li>Primera División 2001</li>
+                                <li>Primera División 2014</li>
+                                <li>Primera División 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Internacionales Section -->
+        <section class="internacionales-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Éxitos Internacionales</h2>
+                    <p class="section-subtitle">La Academia en la cima del mundo</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="internacionales-content" data-aos="fade-up" data-aos-delay="200">
+                            <div class="trophy-grid">
+                                <div class="trophy-item"><i class="fas fa-trophy"></i><h4>1 Libertadores</h4><p>Campeón 1967</p></div>
+                                <div class="trophy-item"><i class="fas fa-medal"></i><h4>1 Intercontinental</h4><p>Campeón del mundo 1967</p></div>
+                            </div>
+                            <div class="internacionales-text">
+                                <p>Racing Club fue el primer campeón del mundo argentino, ganando la Copa Intercontinental en 1967 ante el Celtic FC.</p>
+                                <p>En la Copa Libertadores 1967, Racing se consagró campeón en la edición más extensa de la historia, derrotando a Nacional en la final.</p>
+                                <p>El plantel campeón incluyó a figuras como Roberto Perfumo, Juan C. Rulli, Oscar Martín, Alfio Basile, Juan C. Cárdenas, Humberto Raffo, Humberto Maschio, Miguel Ángel Mori, Agustín Mario Cejas, Rubén Díaz, Juan José Rodríguez, Fernando Parenti, João Cardoso, Nelson Chabay, Jaime Martinoli, Néstor Rambert, Antonio Spilinga, Antonio Manillo, Rodolfo Vilanoba, Luis Carrizo y Oscar Cáceres.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- El Cilindro Section -->
+        <section class="cilindro-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">El Cilindro</h2>
+                    <p class="section-subtitle">El estadio de La Academia</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="cilindro-content">
+                            <h3>Estadio Presidente Juan Domingo Perón</h3>
+                            <p>El Cilindro de Avellaneda, inaugurado el 3 de septiembre de 1950, es el estadio de Racing Club. Con capacidad para 51.000 espectadores, es uno de los estadios más emblemáticos de Argentina.</p>
+                            <div class="cilindro-stats">
+                                <div class="cilindro-stat">
+                                    <i class="fas fa-users"></i>
+                                    <div>
+                                        <h5>Capacidad</h5>
+                                        <span>51.000 espectadores</span>
+                                    </div>
+                                </div>
+                                <div class="cilindro-stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <div>
+                                        <h5>Inauguración</h5>
+                                        <span>3 de Septiembre de 1950</span>
+                                    </div>
+                                </div>
+                                <div class="cilindro-stat">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <h5>Ubicación</h5>
+                                        <span>Avellaneda, Buenos Aires</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <img src="../recursos/estadio-de-racing.jpg" alt="El Cilindro, estadio de Racing Club" class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer moderno -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="../recursos/logo-final.png" alt="SLP Logo" class="footer-logo">
+                        <h4>Sonríe La Pelota</h4>
+                        <p>Tu fuente de información sobre el fútbol argentino</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Enlaces Útiles</h5>
+                    <ul class="footer-links">
+                        <li><a href="https://www.ole.com.ar/" target="_blank">Olé</a></li>
+                        <li><a href="https://www.tycsports.com/" target="_blank">TyC Sports</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Seguinos</h5>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/sonrielapelota1/" target="_blank" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.ole.com.ar/" target="_blank" class="social-link ole"><i class="fas fa-newspaper"></i></a>
+                        <a href="https://www.tycsports.com/" target="_blank" class="social-link tyc"><i class="fas fa-tv"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sonríe La Pelota. Todos los derechos reservados.</p>
             </div>
         </div>
-
-        <h2 class="titulo-4">INTERNACIONALES</h2>
-
-        <section class="parrafo-racing">
-            <p>En la Copa Libertadores 1967 Racing se consagra campeón de la edición más extensa de la historia de la
-                competencia al derrotar a Nacional en una reñida final por 2 a 1 con goles del brasilero João Cardoso y
-                de
-                Norberto Raffo. El goleador de la competición fue el delantero académico Norberto Raffo, con 13 tantos
-                convertidos. Racing es el equipo con más victorias en la historia del certamen (14).</p>
-            <p>El plantel campeón de la Copa Libertadores 1967: <b> Roberto Perfumo, Juan C. Rulli, Oscar Martín, Alfio
-                    Basile, Juan C. Cárdenas, Humberto Raffo, Humberto Maschio, Miguel Ángel Mori, Agustín Mario Cejas,
-                    Rubén Díaz, Juan José Rodríguez, Fernando Parenti, João Cardoso, Nelson Chabay, Jaime Martinoli,
-                    Néstor
-                    Rambert, Antonio Spilinga, Antonio Manillo, Rodolfo Vilanoba, Luis Carrizo y Oscar Cáceres.</b></p>
-            <p>Racing club fue el primer campeón del mundo Argentino. En la Copa Intercontinental de 1967 se consagra
-                campeón derrotando al poderoso Celtic Football Club, campeón de la Liga de Campeones de la UEFA. En el
-                partido de ida, en Hampden Park en Glasgow, Escocia, Racing perdió por 1 a 0 con gol de Billy McNeill.
-                En el
-                de vuelta, en Avellaneda, Argentina, ganó por 2 a 1, con goles de Norberto Raffo y de Juan Carlos
-                Cárdenas;
-                forzando un tercer partido.</p>
-        </section>
-
-    </main>
-
-
-
-    <footer class="footer">
-        <ul class="ul-footer">
-            <li><a class="ul-footer--instagram" href="https://www.instagram.com/sonrielapelota1/"
-                    target="_blank">INSTAGRAM</a></li>
-            <li><a class="ul-footer--ole" href="https://www.ole.com.ar/" target="_blank">OLE</a></li>
-            <li><a class="ul-footer--tyc-sports" href="https://www.tycsports.com/" target="_blank">TYC SPORTS</a></li>
-        </ul>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({duration: 800,easing: 'ease-in-out',once: true});</script>
 </body>
 
 </html>

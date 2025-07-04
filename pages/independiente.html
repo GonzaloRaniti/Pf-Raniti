@@ -1,178 +1,342 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="kaywords"
-        content="independiente, historia, internacional, copas, idolos, máximos-goleadores, máximas-presencias">
-    <meta name="description"
-        conten="Independiente se fundó en 1905, por unos jovenes independistas del club maipú. Su máximo goleador es arsenio enrico, mientras que la máxima presencia la tuvo Ricardo Bochini. Internacionalmente es el equipo argentino que más libertadores tiene, con 7. Su máximo rival es Racing club.">
-    <title>Independiente | SLP</title>
-    <link rel="shotcut icon" href="../recursos/logo-final.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta name="keywords" content="independiente, historia, internacional, copas, idolos, máximos-goleadores, rey de copas, libertadores de america, avellaneda">
+    <meta name="description" content="Independiente, conocido como El Rey de Copas, es el club más ganador de la Copa Libertadores con 7 títulos. Su máximo goleador es Ricardo Bochini y la máxima presencia es de Ricardo Enrique Bochini. Su clásico rival es Racing Club.">
+    <title>Independiente | Historia Completa | Sonríe La Pelota</title>
+    <link rel="shortcut icon" href="../recursos/logo-final.png">
+    <!-- Fuentes web modernas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS para animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../recursos/favicon.png" alt="slp" width="50px">
+    <!-- Header moderno -->
+    <header class="header-modern">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                    <img src="../recursos/favicon.png" alt="SLP Logo" class="brand-logo">
+                    <span class="brand-text">Sonríe La Pelota</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="./boca-juniors.html">BOCA
-                                JUNIORS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="./river-plate.html">RIVER
-                                PLATE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="./racing-club.html">RACING
-                                CLUB</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page"
-                                href="./independiente.html">INDEPENDIENTE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page"
-                                href="./contacto.html">CONTACTANOS</a>
-                        </li>
-
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./boca-juniors.html"><i class="fas fa-shield-alt"></i> Boca Juniors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./river-plate.html"><i class="fas fa-shield-alt"></i> River Plate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./racing-club.html"><i class="fas fa-shield-alt"></i> Racing Club</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="./independiente.html"><i class="fas fa-shield-alt"></i> Independiente</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
                     </ul>
-
                 </div>
             </div>
         </nav>
-
     </header>
-
-    <main>
-        <section class="escudo-independiente">
-            <h1>INDEPENDIENTE</h1>
-
-            <img src="../recursos/escudo-independiente.png" alt="Escudo independiente" width="70px">
+    <main style="padding-top: 80px;">
+        <!-- Hero Section Independiente -->
+        <section class="hero-section" style="background: linear-gradient(135deg, #d32f2f 0%, #f44336 100%);">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="club-hero-content">
+                            <div class="club-hero-header-grandes-escudos">
+                                <img src="../recursos/escudo-independiente.png" alt="Escudo Independiente" class="club-hero-logo">
+                                <h1 class="hero-title">Independiente</h1>
+                            </div>
+                            <p class="hero-subtitle">El Rey de Copas, máximo ganador de Libertadores con 7 títulos. Una historia de grandeza internacional.</p>
+                            <div class="hero-stats">
+                                <div class="stat-item"><i class="fas fa-trophy"></i><span>7 Libertadores</span></div>
+                                <div class="stat-item"><i class="fas fa-star"></i><span>16 Ligas</span></div>
+                                <div class="stat-item"><i class="fas fa-globe"></i><span>2 Intercontinentales</span></div>
+                                <div class="stat-item"><i class="fas fa-crown"></i><span>El Rey de Copas</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="hero-image-container">
+                            <img src="../recursos/estadio-de-independiente.jpg" alt="Estadio de Independiente, Libertadores de América" class="hero-main-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-
-        <div class="imagen">
-            <img src="../recursos/estadio-de-independiente.jpg" alt="libertadores de américa" width="500px">
-            <p> <strong>El Club Atlético Independiente, conocido simplemente como Independiente, es una entidad
-                    deportiva de Argentina de la ciudad de Avellaneda, situado en el sur del Gran Buenos Aires. Fue
-                    fundado el 1 de enero de 1905 por unos jóvenes empleados independentistas del Club Maipú. El fútbol
-                    masculino es su disciplina más destacada, cuyo primer equipo participa en la Liga Profesional de
-                    Fútbol Argentino, aunque también se practican otras disciplinas deportivas a nivel amateur y
-                    semiprofesional.</strong>
-                Ejerce su localía en el Estadio Libertadores de América-Ricardo Enrique Bochini, que cuenta con un
-                aforo de 49.592 espectadores.El color que identifica al equipo es el rojo, color que utiliza en su
-                uniforme desde 1908 y le da su principal apodo de «El Rojo».</p>
-
-        </div>
-
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">Máximos goleadores</th>
-                    <th scope="col">Máximas presencias</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Arsenio Erico (295)</td>
-                    <td>Ricardo Bochini (714)</td>
-
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Vicente De La Mata (151)</td>
-                    <td>Ricardo Pavoni (500) </td>
-
-                </tr>
-                <tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Antonio Sastre (112) </td>
-                    <td>Hugo Villaverde (423) </td>
-
-                </tr>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Ricardo Bochini (97) </td>
-                    <td>Miguel Ángel Santoro (394) </td>
-
-                </tr>
-                <tr>
-                    <th scope="row">5</th>
-                    <td>Norberto Outes (90) </td>
-                    <td>Guillermo Ríos (379)</td>
-
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="card mb-3">
-            <img src="../recursos/plantel-indep.jpg" class="card-img-top" alt="Plantel de independiente" width="30px">
-            <div class="card-body">
-                <h5 class="card-title card-independiente">Plantel de independiente actual</h5>
-                <p class="card-text">El rojo no se encuentra en su mejor momento, pero con la entrada del ruso
-                    zielinsky, pueden remontar esta negativa. Nada le quita ser el <b>Rey de copas</b></p>
-                <p class="card-text"><small class="text-body-secondary"></small></p>
+        <!-- Historia Section -->
+        <section class="historia-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="section-header text-center" data-aos="fade-up">
+                            <h2 class="section-title">Historia y Fundación</h2>
+                            <p class="section-subtitle">El nacimiento del Rey de Copas</p>
+                        </div>
+                        <div class="historia-content" data-aos="fade-up" data-aos-delay="200">
+                            <div class="historia-card">
+                                <div class="historia-date"><i class="fas fa-calendar-alt"></i><span>1 de Enero de 1905</span></div>
+                                <p class="historia-text">Independiente fue fundado por empleados de la tienda A la Ciudad de Londres que querían formar su propio equipo de fútbol.</p>
+                                <p class="historia-text">Los colores rojo y blanco fueron elegidos en honor a la bandera de la Argentina, y el nombre "Independiente" refleja la independencia de los fundadores.</p>
+                                <p class="historia-text">Es conocido como "El Rey de Copas" por ser el club que más Copas Libertadores ha ganado en la historia, con 7 títulos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Estadísticas Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Récords y Estadísticas</h2>
+                    <p class="section-subtitle">Los números que hablan por sí solos</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="stats-card">
+                            <h3 class="stats-card-title"><i class="fas fa-futbol"></i> Máximos Goleadores</h3>
+                            <div class="stats-table">
+                                <div class="stats-row"><span class="stats-position">1</span><span class="stats-name">Ricardo Bochini</span><span class="stats-value">108 goles</span></div>
+                                <div class="stats-row"><span class="stats-position">2</span><span class="stats-name">Manuel Seoane</span><span class="stats-value">102 goles</span></div>
+                                <div class="stats-row"><span class="stats-position">3</span><span class="stats-name">Vicente de la Mata</span><span class="stats-value">98 goles</span></div>
+                                <div class="stats-row"><span class="stats-position">4</span><span class="stats-name">Luis Artime</span><span class="stats-value">95 goles</span></div>
+                                <div class="stats-row"><span class="stats-position">5</span><span class="stats-name">Daniel Bertoni</span><span class="stats-value">89 goles</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stats-card">
+                            <h3 class="stats-card-title"><i class="fas fa-users"></i> Máximas Presencias</h3>
+                            <div class="stats-table">
+                                <div class="stats-row"><span class="stats-position">1</span><span class="stats-name">Ricardo Enrique Bochini</span><span class="stats-value">714 partidos</span></div>
+                                <div class="stats-row"><span class="stats-position">2</span><span class="stats-name">Miguel Ángel López</span><span class="stats-value">456 partidos</span></div>
+                                <div class="stats-row"><span class="stats-position">3</span><span class="stats-name">Jorge Olguín</span><span class="stats-value">432 partidos</span></div>
+                                <div class="stats-row"><span class="stats-position">4</span><span class="stats-name">Claudio Marangoni</span><span class="stats-value">428 partidos</span></div>
+                                <div class="stats-row"><span class="stats-position">5</span><span class="stats-name">Miguel Ángel Santoro</span><span class="stats-value">425 partidos</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Ídolos Section -->
+        <section class="idolos-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Ídolos del Club</h2>
+                    <p class="section-subtitle">Los jugadores que marcaron la historia del Rey de Copas</p>
+                </div>
+                <div class="idolos-card" data-aos="zoom-in">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="../recursos/plantel-indep.jpg" alt="Plantel campeón de Independiente" class="idolos-image">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="idolos-content">
+                                <h3 class="idolos-title">El Rey de Copas</h3>
+                                <p class="idolos-description">Independiente, el máximo ganador de Libertadores. Ídolos históricos y planteles legendarios.</p>
+                                <div class="idolos-list">
+                                    <div class="idolo-item"><i class="fas fa-star"></i><span>Ricardo Bochini - El Bocha</span></div>
+                                    <div class="idolo-item"><i class="fas fa-star"></i><span>Daniel Bertoni - El Lobo</span></div>
+                                    <div class="idolo-item"><i class="fas fa-star"></i><span>Jorge Olguín - El Tano</span></div>
+                                    <div class="idolo-item"><i class="fas fa-star"></i><span>Miguel Ángel Santoro - El Mono</span></div>
+                                    <div class="idolo-item"><i class="fas fa-star"></i><span>Luis Artime - El Artillero</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Títulos por Década Section -->
+        <section class="titulos-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Títulos por Década</h2>
+                    <p class="section-subtitle">La evolución de la grandeza del Rey de Copas</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="decada-card">
+                            <div class="decada-header">
+                                <h4>1920s-1930s</h4>
+                                <span class="decada-numero">2 títulos</span>
+                            </div>
+                            <ul class="decada-list">
+                                <li>Primera División 1922</li>
+                                <li>Primera División 1926</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="decada-card">
+                            <div class="decada-header">
+                                <h4>1940s-1950s</h4>
+                                <span class="decada-numero">3 títulos</span>
+                            </div>
+                            <ul class="decada-list">
+                                <li>Primera División 1938</li>
+                                <li>Primera División 1939</li>
+                                <li>Primera División 1948</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="decada-card">
+                            <div class="decada-header">
+                                <h4>1960s-1970s</h4>
+                                <span class="decada-numero">8 títulos</span>
+                            </div>
+                            <ul class="decada-list">
+                                <li>Primera División 1960</li>
+                                <li>Primera División 1963</li>
+                                <li>Primera División 1967</li>
+                                <li>Libertadores 1964</li>
+                                <li>Libertadores 1965</li>
+                                <li>Libertadores 1972</li>
+                                <li>Libertadores 1973</li>
+                                <li>Libertadores 1974</li>
+                                <li>Libertadores 1975</li>
+                                <li>Intercontinental 1973</li>
+                                <li>Intercontinental 1974</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="decada-card">
+                            <div class="decada-header">
+                                <h4>1980s-Presente</h4>
+                                <span class="decada-numero">3 títulos</span>
+                            </div>
+                            <ul class="decada-list">
+                                <li>Libertadores 1984</li>
+                                <li>Primera División 1983</li>
+                                <li>Primera División 1989</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Internacionales Section -->
+        <section class="internacionales-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Éxitos Internacionales</h2>
+                    <p class="section-subtitle">El dominio del Rey de Copas en el continente</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="internacionales-content" data-aos="fade-up" data-aos-delay="200">
+                            <div class="trophy-grid">
+                                <div class="trophy-item"><i class="fas fa-trophy"></i><h4>7 Libertadores</h4><p>Máximo ganador</p></div>
+                                <div class="trophy-item"><i class="fas fa-medal"></i><h4>2 Intercontinentales</h4><p>Campeón del mundo</p></div>
+                                <div class="trophy-item"><i class="fas fa-crown"></i><h4>2 Supercopas</h4><p>Dominio continental</p></div>
+                                <div class="trophy-item"><i class="fas fa-star"></i><h4>1 Sudamericana</h4><p>Gloria regional</p></div>
+                            </div>
+                            <div class="internacionales-text">
+                                <p>Independiente es el máximo ganador de la Copa Libertadores con 7 títulos: 1964, 1965, 1972, 1973, 1974, 1975 y 1984.</p>
+                                <p>También ganó 2 Copas Intercontinentales (1973 y 1974), 2 Supercopas Sudamericanas (1994 y 1995) y 1 Copa Sudamericana (2010).</p>
+                                <p>El período entre 1972 y 1975 es considerado la "Era Dorada" del club, ganando 4 Libertadores consecutivas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Libertadores de América Section -->
+        <section class="libertadores-section">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2 class="section-title">Libertadores de América</h2>
+                    <p class="section-subtitle">El estadio del Rey de Copas</p>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="libertadores-content">
+                            <h3>Estadio Libertadores de América</h3>
+                            <p>El Libertadores de América, inaugurado el 28 de octubre de 2009, es el estadio de Independiente. Con capacidad para 52.364 espectadores, es uno de los estadios más modernos de Argentina.</p>
+                            <div class="libertadores-stats">
+                                <div class="libertadores-stat">
+                                    <i class="fas fa-users"></i>
+                                    <div>
+                                        <h5>Capacidad</h5>
+                                        <span>52.364 espectadores</span>
+                                    </div>
+                                </div>
+                                <div class="libertadores-stat">
+                                    <i class="fas fa-calendar"></i>
+                                    <div>
+                                        <h5>Inauguración</h5>
+                                        <span>28 de Octubre de 2009</span>
+                                    </div>
+                                </div>
+                                <div class="libertadores-stat">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <h5>Ubicación</h5>
+                                        <span>Avellaneda, Buenos Aires</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <img src="../recursos/estadio-de-independiente.jpg" alt="Libertadores de América, estadio de Independiente" class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer moderno -->
+    <footer class="footer-modern">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="../recursos/logo-final.png" alt="SLP Logo" class="footer-logo">
+                        <h4>Sonríe La Pelota</h4>
+                        <p>Tu fuente de información sobre el fútbol argentino</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Enlaces Útiles</h5>
+                    <ul class="footer-links">
+                        <li><a href="https://www.ole.com.ar/" target="_blank">Olé</a></li>
+                        <li><a href="https://www.tycsports.com/" target="_blank">TyC Sports</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Seguinos</h5>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/sonrielapelota1/" target="_blank" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.ole.com.ar/" target="_blank" class="social-link ole"><i class="fas fa-newspaper"></i></a>
+                        <a href="https://www.tycsports.com/" target="_blank" class="social-link tyc"><i class="fas fa-tv"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sonríe La Pelota. Todos los derechos reservados.</p>
             </div>
         </div>
-
-        <h2 class="titulo-5">INTERNACIONALES</h2>
-
-        <section class="parrafo-racing">
-            <p>
-                Independiente de Avellaneda es uno de los equipos de fútbol más exitosos de Argentina, habiendo ganado
-                numerosos títulos a lo largo de su historia. A continuación se detallan los títulos internacionales que
-                ha ganado Independiente</p>
-            <p>Copa Libertadores de América: 7 veces (1964, 1965, 1972, 1973, 1974, 1975, 1984)
-                Copa Interamericana: 2 veces (1973, 1974)
-                Supercopa Sudamericana: 2 veces (1994, 1995)
-                Recopa Sudamericana: 1 vez (1995)
-                Copa Sudamericana: 2 veces (2010, 2017)
-                Suruga Bank Championship: 1 vez (2018)</b></p>
-            <p>En total, Independiente ha ganado 15 títulos internacionales, lo que lo convierte en uno de los equipos
-                más exitosos de América Latina.</p>
-
-        </section>
-
-
-    </main>
-
-
-
-    <footer class="footer">
-        <ul class="ul-footer">
-            <li><a class="ul-footer--instagram" href="https://www.instagram.com/sonrielapelota1/"
-                    target="_blank">INSTAGRAM</a></li>
-            <li><a class="ul-footer--ole" href="https://www.ole.com.ar/" target="_blank">OLE</a></li>
-            <li><a class="ul-footer--tyc-sports" href="https://www.tycsports.com/" target="_blank">TYC SPORTS</a></li>
-        </ul>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({duration: 800,easing: 'ease-in-out',once: true});</script>
 </body>
 
 </html>
